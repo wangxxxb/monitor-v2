@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "dist",
+      "sourceMap": false,
+      "target": "es5",
+      "useDefineForClassFields": false,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowJs": false,
+      "strict": true,
+      "noUnusedLocals": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "strictNullChecks": false,
+      "noImplicitAny": false,
+      "esModuleInterop": true,
+      "removeComments": false,
+      "jsx": "preserve",
+      "lib": ["esnext", "dom"],
+      "types": ["node"],
+      "rootDir": ".",
+      "paths": {
+        "@monitor/*": [
+            "packages/*/src"
+        ]
+      }
+    },
+    "include": [
+      "packages/*/src",
+      "typings",
+      "packages/*/__tests__",
+      "node_modules/@types/*",
+    ]
+  }
+  

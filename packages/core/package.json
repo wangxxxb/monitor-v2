@@ -1,0 +1,29 @@
+{
+  "name": "@monitor/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "src/index.ts",
+  "types": "dist/core.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "buildOptions": {
+    "name": "MonitorCore",
+    "formats": [
+      "cjs",
+      "esm-bundler",
+      "global"
+    ]
+  },
+  "dependencies": {
+    "merge": "^2.1.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@monitor/shared": "workspace:^1.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  }
+}

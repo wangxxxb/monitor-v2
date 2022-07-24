@@ -1,0 +1,11 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@monitor/core': workspace:^1.0.0
+  '@monitor/shared': workspace:^1.0.0
+
+dependencies:
+  '@monitor/core': link:../core
+
+devDependencies:
+  '@monitor/shared': link:../shared

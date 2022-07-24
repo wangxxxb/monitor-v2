@@ -1,0 +1,10 @@
+{
+  "name": "@monitor/shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "src/index.ts",
+  "types": "dist/shared.d.ts",
+  "buildOptions": {
+    "formats": ["cjs", "esm-bundler"]
+  }
+}

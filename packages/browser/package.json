@@ -1,0 +1,25 @@
+{
+  "name": "@monitor/browser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "src/index.ts",
+  "types": "dist/browser.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "buildOptions": {
+    "name": "MonitorBrowser",
+    "formats": [
+      "global",
+      "cjs",
+      "esm-bundler"
+    ]
+  },
+  "dependencies": {
+    "@monitor/core": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "@monitor/shared": "workspace:^1.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@monitor/shared': workspace:^1.0.0
+  merge: ^2.1.1
+  uuid: ^8.3.2
+
+dependencies:
+  merge: registry.npmmirror.com/merge/2.1.1
+  uuid: registry.npmmirror.com/uuid/8.3.2
+
+devDependencies:
+  '@monitor/shared': link:../shared
+
+packages:
+
+  registry.npmmirror.com/merge/2.1.1:
+    resolution: {integrity: sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/merge/-/merge-2.1.1.tgz}
+    name: merge
+    version: 2.1.1
+    dev: false
+
+  registry.npmmirror.com/uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz}
+    name: uuid
+    version: 8.3.2
+    hasBin: true
+    dev: false
