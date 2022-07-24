@@ -14,15 +14,15 @@ class Core {
         logger(LogLevel.DEFAULT, 'start monitor...');
     }
 
-    private monitorOptions: Partial<MonitorOptions> = defaultOptions
+    monitorOptions: Partial<MonitorOptions> = defaultOptions
 
-    private context: MonitorContext = context
+    context: MonitorContext = context
 
-    private intergrations: Intergration[] = []
+    intergrations: Intergration[] = []
 
-    private reportInstance: Report
+    reportInstance: Report
 
-    private initOptions = (options: Partial<MonitorOptions>) => {
+    initOptions = (options: Partial<MonitorOptions>) => {
         if (!this.validateOptions(options)) return
         this.monitorOptions = merge({}, this.monitorOptions, options)
         this.context.debugLevel = this.monitorOptions.logLevel!
@@ -34,7 +34,7 @@ class Core {
         logger(LogLevel.DEFAULT, '更新后配置为:', this.monitorOptions);
     }
 
-    private validateOptions = (options: Partial<MonitorOptions>) => {
+    validateOptions = (options: Partial<MonitorOptions>) => {
         const errorConfigs: string[] = [];
 
         const getPageType = get(options, ['getPageType'])
@@ -67,13 +67,13 @@ class Core {
         }
     }
 
-    private track = (data: any) => {
+    track = (data: any) => {
         this.reportInstance.report(data)
     }
 
     public dig?: (data: string) => void
 
-    private _dig = (data: any[]) => {
+    _dig = (data: any[]) => {
         if (typeof this.monitorOptions.beforeSend === 'function') {
             data = data.filter((item) => this.monitorOptions.beforeSend!(item))
         }

@@ -64,7 +64,7 @@ const rollupConfigs = packageFormats.reduce((prev, format) => {
                 cacheRoot: path.resolve(__dirname, 'node_modules/.ts2_cache'),
                 tsconfigOverride: {
                   compilerOptions: {
-                    target: 'es2015', // 写死es2015, 如果拓展node端可以写es2019
+                    target: 'es2015',
                     sourceMap: process.env.SOURCE_MAP !== null,
                     declaration: shouldEmitDeclarations,
                     declarationMap: shouldEmitDeclarations
